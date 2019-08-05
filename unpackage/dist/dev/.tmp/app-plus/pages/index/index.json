@@ -8,7 +8,7 @@
       "borderRadius": "4px",
       "placeholder": "搜索糗事",
       "placeholderColor": "#cccccc",
-      "disabled": false
+      "disabled": true
     },
     "buttons": [
       {
@@ -32,6 +32,7 @@
   "usingComponents": {
     "index-list": "/components/index/index-list",
     "swiper-tab-head": "/components/index/swiper-tab-head",
-    "load-more": "/components/common/load-more"
+    "load-more": "/components/common/load-more",
+    "no-thing": "/components/common/no-thing"
   }
 }

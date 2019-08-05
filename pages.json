@@ -14,7 +14,7 @@
 							"borderRadius":"4px",
 							"placeholder":"搜索糗事",
 							"placeholderColor":"#cccccc",
-							"disabled":false
+							"disabled":true
 						},
 						//配置按钮
 						"buttons":[
@@ -52,6 +52,46 @@
         ,{
             "path" : "pages/mine/mine",
             "style" : {}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"app-plus":{
+					"scrollIndicator":"none",//隐藏滚动条
+					"bounce":"none",//关闭反弹效果
+					"titleNView":{
+						"autoBackButton":false,//仅app有效 h5页面无效
+						//搜索框配置
+						"searchInput":{
+							"align":"left",
+							"backgroundColor":"#F7F7F7",
+							"borderRadius":"4px",
+							"placeholder":"搜索糗事",
+							"placeholderColor":"#cccccc",
+							"disabled":false
+						},
+						//配置按钮
+						"buttons":[
+							//右边
+							{
+								"color":"#000000",
+								"colorPressed":"#BBBBBB",
+								"float":"right",
+								"fontSize":"16px",
+								"text":"取消"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/add-input/add-input",
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
         }
     ],
 	"globalStyle": {

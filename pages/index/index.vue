@@ -9,12 +9,19 @@
 			<swiper class="swiper-box" :style="{height:swiperHeight+'px'}" :current="tabIndex" @change="tabChange">
 				<swiper-item v-for="(items,index) in newslist" :key="index">
 					<scroll-view scroll-y class="list" @scrolltolower="loadmore(index)">
-						<!-- 图文列表 -->
-						<block v-for="(item,index1) in items.list" :key="index1">
-							<index-list :item="item" :index="index1"></index-list>
-						</block>
-						<!-- 上拉加载更多 -->
-						<load-more :loadMore="items.list.loadtext"></load-more>
+						<template v-if="items.list.length>0">
+							<!-- 图文列表 -->
+							<block v-for="(item,index1) in items.list" :key="index1">
+								<index-list :item="item" :index="index1"></index-list>
+							</block>
+							<!-- 上拉加载更多 -->
+							<load-more :loadMore="items.list.loadtext"></load-more>
+						</template>
+						<template v-else>
+							<!-- 无内容列表 -->
+							<no-thing></no-thing>
+						</template>
+						
 					</scroll-view>
 				</swiper-item>
 			</swiper>
@@ -28,11 +35,13 @@
 	import indexList from "../../components/index/index-list.vue"
 	import swiperTabHead from "../../components/index/swiper-tab-head.vue"
 	import loadMore from '../../components/common/load-more.vue';
+	import noThing from '../../components/common/no-thing.vue';
 	export default {
 		components:{
 			indexList,
 			swiperTabHead,
-			loadMore
+			loadMore,
+			noThing
 		},
 		data() {
 			return {
@@ -269,112 +278,19 @@
 					{
 						loadtext:"上拉加载更多",
 						list:[
-							{
-								userpic:"../../static/demo/userpic/12.jpg",
-								username:"昵称",
-								isguanzhu:false,
-								title:"我是标题",
-								type:"img",//img图文 video视频
-								titlepic:"../../static/demo/datapic/11.jpg",//封面图
-								infonum:{
-									index:0,//0没有操作  1已经顶了 2已经踩了
-									dingnum:11,
-									cainum:11
-								},
-								commentnum:10,//评论
-								sharenum:10
-							},
-							{
-								userpic:"../../static/demo/userpic/12.jpg",
-								username:"昵称",
-								isguanzhu:true,
-								title:"我是标题",
-								type:"video",//img图文 video视频
-								titlepic:"../../static/demo/datapic/11.jpg",//封面图
-								playnum:"20w",
-								long:"2:47",
-								infonum:{
-									index:1,//0没有操作  1已经顶了 2已经踩了
-									dingnum:11,
-									cainum:11
-								},
-								commentnum:10,//评论
-								sharenum:10
-							}
+							
 						]
 					},
 					{
 						loadtext:"上拉加载更多",
 						list:[
-							{
-								userpic:"../../static/demo/userpic/12.jpg",
-								username:"昵称",
-								isguanzhu:false,
-								title:"我是标题",
-								type:"img",//img图文 video视频
-								titlepic:"../../static/demo/datapic/11.jpg",//封面图
-								infonum:{
-									index:0,//0没有操作  1已经顶了 2已经踩了
-									dingnum:11,
-									cainum:11
-								},
-								commentnum:10,//评论
-								sharenum:10
-							},
-							{
-								userpic:"../../static/demo/userpic/12.jpg",
-								username:"昵称",
-								isguanzhu:true,
-								title:"我是标题",
-								type:"video",//img图文 video视频
-								titlepic:"../../static/demo/datapic/11.jpg",//封面图
-								playnum:"20w",
-								long:"2:47",
-								infonum:{
-									index:1,//0没有操作  1已经顶了 2已经踩了
-									dingnum:11,
-									cainum:11
-								},
-								commentnum:10,//评论
-								sharenum:10
-							}
+							
 						]
 					},
 					{
 						loadtext:"上拉加载更多",
 						list:[
-							{
-								userpic:"../../static/demo/userpic/12.jpg",
-								username:"昵称",
-								isguanzhu:false,
-								title:"我是标题",
-								type:"img",//img图文 video视频
-								titlepic:"../../static/demo/datapic/11.jpg",//封面图
-								infonum:{
-									index:0,//0没有操作  1已经顶了 2已经踩了
-									dingnum:11,
-									cainum:11
-								},
-								commentnum:10,//评论
-								sharenum:10
-							},
-							{
-								userpic:"../../static/demo/userpic/12.jpg",
-								username:"昵称",
-								isguanzhu:true,
-								title:"我是标题",
-								type:"video",//img图文 video视频
-								titlepic:"../../static/demo/datapic/11.jpg",//封面图
-								playnum:"20w",
-								long:"2:47",
-								infonum:{
-									index:1,//0没有操作  1已经顶了 2已经踩了
-									dingnum:11,
-									cainum:11
-								},
-								commentnum:10,//评论
-								sharenum:10
-							}
+							
 						]
 					}
 				],
@@ -388,6 +304,20 @@
 					console.log(height);
 					this.swiperHeight=height;
 				}
+			});
+		},
+		//监听搜素框点击事件
+		onNavigationBarSearchInputClicked() {
+			console.log(123);
+			uni.navigateTo({
+				url: '../search/search',
+			});
+		},
+		//监听原生标题导航按钮点击事件
+		onNavigationBarButtonTap(e){
+			console.log(JSON.stringify(e));
+			uni.navigateTo({
+				url: '../add-input/add-input',
 			});
 		},
 		methods: {
