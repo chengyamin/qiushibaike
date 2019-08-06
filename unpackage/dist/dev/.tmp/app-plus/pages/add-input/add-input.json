@@ -1,6 +1,7 @@
 {
   "titleNView": false,
   "usingComponents": {
-    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar"
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "upload-images": "/components/common/upload-images"
   }
 }
