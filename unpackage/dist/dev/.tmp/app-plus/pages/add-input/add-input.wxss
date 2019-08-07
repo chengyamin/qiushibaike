@@ -2,5 +2,22 @@
 .uni-textarea{
 	border:1rpx solid #EEEEEE;
 }
-
+.custom-pop {
+	width: 100%;
+	height: 100%;
+	background: #808080;
+	position: relative;
+	top:0;
+	left:0;
+}
+.custom-pop tankuang{
+	width:50%;
+	height: 50%;
+	position: fixed;
+	top:50%;
+	left:50%;
+}
+.custom-pop button{
+	background:#FFE934 ;
+}
 
