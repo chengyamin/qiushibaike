@@ -152,9 +152,15 @@ var _default =
     item: Object,
     index: Number },
 
+  data: function data() {
+    return {
+      isguanzhu: this.item.isguanzhu,
+      infonum: this.item.infonum };
+
+  },
   methods: {
     guanzhu: function guanzhu() {
-      this.item.isguanzhu = true;
+      this.isguanzhu = true;
       uni.showToast({
         title: '关注成功' });
 
@@ -162,24 +168,24 @@ var _default =
     caozuo: function caozuo(type) {
       switch (type) {
         case "ding":
-          if (this.item.infonum.index == 1) {
+          if (this.infonum.index == 1) {
             return;
           }
-          this.item.infonum.dingnum++;
-          if (this.item.infonum.index == 2) {
-            this.item.infonum.cainum--;
+          this.infonum.dingnum++;
+          if (this.infonum.index == 2) {
+            this.infonum.cainum--;
           }
-          this.item.infonum.index = 1;
+          this.infonum.index = 1;
           break;
         case "cai":
-          if (this.item.infonum.index == 2) {
+          if (this.infonum.index == 2) {
             return;
           }
-          this.item.infonum.cainum++;
-          if (this.item.infonum.index == 1) {
-            this.item.infonum.dingnum--;
+          this.infonum.cainum++;
+          if (this.infonum.index == 1) {
+            this.infonum.dingnum--;
           }
-          this.item.infonum.index = 2;
+          this.infonum.index = 2;
           break;}
 
     } } };exports.default = _default;

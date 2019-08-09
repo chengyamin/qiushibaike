@@ -76,7 +76,7 @@
 						uni.navigateBack({
 							delta: 1
 						})
-					},
+					},  
 				})
 			},
 			//返回

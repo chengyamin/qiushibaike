@@ -139,6 +139,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var _changelook = ['所有人可见', '仅自己可见'];var _default =
 {
   components: {
@@ -149,10 +151,10 @@ var _changelook = ['所有人可见', '仅自己可见'];var _default =
   data: function data() {
     return {
       isget: false,
-      showPopup: true,
       yinsi: "所有人可见",
       text: '',
-      imglist: [] };
+      imglist: [],
+      showCusPop: true };
 
   },
   onBackPress: function onBackPress() {
@@ -164,10 +166,7 @@ var _changelook = ['所有人可见', '仅自己可见'];var _default =
     }
   },
   methods: {
-    hidePopup: function hidePopup() {
-      console.log(aaa);
-      this.showPopup = false;
-    },
+
     //保存为草稿
     baocun: function baocun() {var _this = this;
       uni.showModal({
@@ -211,6 +210,9 @@ var _changelook = ['所有人可见', '仅自己可见'];var _default =
     upload: function upload(arr) {
       this.imglist = arr;
       console.log(this.imglist);
+    },
+    handleCusClick: function handleCusClick() {
+      this.showCusPop = false;
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

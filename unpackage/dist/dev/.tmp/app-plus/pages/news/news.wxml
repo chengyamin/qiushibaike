@@ -1,1 +1,1 @@
-<view></view>
+<view><uni-nav-bar vue-id="1" statusBar="{{true}}" data-event-opts="{{[['^clickRight',[['openAdd']]]]}}" bind:clickRight="__e" bind:__l="__l" vue-slots="{{['default','left','right u-f-ajc']}}"><view slot="left"><view class="nav-left"><view class="icon iconfont icon-qiandao"></view></view></view><view class="nav-tab-bar u-f-ajc"><view class="active">关注<view class="nav-tab-bar-line"></view></view><view>话题</view></view><view slot="right u-f-ajc"><view class="nav-right"><view class="icon iconfont icon-bianji1"></view></view></view></uni-nav-bar></view>
