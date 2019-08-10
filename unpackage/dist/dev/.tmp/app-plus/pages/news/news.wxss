@@ -1,34 +1,11 @@
 
-.nav-left>view,.nav-right>view{
-	font-size: 40rpx;
-}
-.nav-left>view{
-	color:#FF9619;
-}
-.nav-left{
-	margin-left:16rpx;
-}
-.nav-right{
-	width:100%;
-}
-.nav-tab-bar{
-	width:100%;
-	margin-left: -20rpx;
-	position:relative;
-}
-.nav-tab-bar>view{
+.search-input{
 	border:1px solid;
-	font-size:32rpx;
-	padding:0 15rpx;
-	font-weight: bold;
-	color:#969696;
+	padding:20rpx;
 }
-.active{
-	color:#333333!important;
-}
-.nav-tab-bar-line{
-	position: absolute;
-	top:0;
-	border-bottom:5rpx solid red;
+.search-input>input{
+	border:1px solid;
+	background: #F4F4F4;
+	border-radius: 10rpx;
 }
 

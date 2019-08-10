@@ -2,7 +2,7 @@
 	<view class="index-list animated rotateIn">
 		<view class="index-list1 u-f-ac u-f-jsb">
 			<view class=" u-f-ac">
-				<image :src="item.userpic" mode="aspectFit" lazy-load></image>{{item.username}}
+				<image :src="item.userpic" mode="widthFix" lazy-load></image>{{item.username}}
 			</view>
 			<view class="u-f-ac" v-show="!isguanzhu" @tap="guanzhu">
 				<view class="icon iconfont icon-zengjia"></view>关注
@@ -91,10 +91,11 @@
 		padding:20upx;
 		border-bottom: 1upx solid #EEEEEE;
 	}
-	.index-list1>view:first-child{
-		width:150upx;
-		height:120upx;
+	.index-list1>view:first-child image{
+		width:90upx;
+		height:90upx;
 		border-radius: 100%;
+		margin-right:10upx;
 	}
 	.index-list1>view:first-child view{
 		width:100upx;

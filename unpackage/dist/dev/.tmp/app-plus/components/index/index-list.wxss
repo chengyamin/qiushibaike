@@ -3,10 +3,11 @@
 	padding:20rpx;
 	border-bottom: 1rpx solid #EEEEEE;
 }
-.index-list1>view.data-v-5607e7a9:first-child{
-	width:150rpx;
-	height:120rpx;
+.index-list1>view:first-child image.data-v-5607e7a9{
+	width:90rpx;
+	height:90rpx;
 	border-radius: 100%;
+	margin-right:10rpx;
 }
 .index-list1>view:first-child view.data-v-5607e7a9{
 	width:100rpx;
