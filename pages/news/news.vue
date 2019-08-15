@@ -30,10 +30,9 @@
 									<image :src="item.src" mode="widthFix" lazy-load></image>
 								</swiper-item>
 							</block>
-							
-							
 						</swiper>
 						<!-- 热门分类 -->
+						<topic-nav :nav="topic.nav"></topic-nav>
 						<!-- 最近更新 -->
 					</scroll-view>
 				</swiper-item>
@@ -47,12 +46,14 @@
 	import commonList from '../../components/common/common-list.vue';
 	import newsNavBar from '../../components/news/news-nav-bar.vue';
 	import loadMore from '../../components/common/load-more.vue';
+	import topicNav from '../../components/news/topic-nav.vue';
 	
 	export default {
 		components:{
 			commonList,
 			newsNavBar,
-			loadMore
+			loadMore,
+			topicNav
 		},
 		data() {
 			return {
@@ -142,6 +143,14 @@
 						{src:"../../static/demo/banner2.jpg"},
 						{src:"../../static/demo/banner2.jpg"},
 						{src:"../../static/demo/banner2.jpg"}
+					],
+					nav:[
+						{name:"最新"},
+						{name:"游戏"},
+						{name:"打卡"},
+						{name:"情感"},
+						{name:"故事"},
+						{name:"喜爱"}
 					]
 				}
 			}
@@ -221,4 +230,6 @@
 	width:100%;
 	border-radius: 10upx;
 }
+/*  */
+
 </style>
