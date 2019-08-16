@@ -15,7 +15,7 @@
 								<index-list :item="item" :index="index1"></index-list>
 							</block>
 							<!-- 上拉加载更多 -->
-							<load-more :loadMore="items.list.loadtext"></load-more>
+							<load-more :loadtext="items.loadtext"></load-more>
 						</template>
 						<template v-else>
 							<!-- 无内容列表 -->

@@ -2,10 +2,10 @@
 	<view class="topic-nav">
 		<view class="u-f-ac u-f-jsb">
 			<view>热门分类</view>
-			<view class="u-f-ajc">更多<view class="icon iconfont icon-jinru"></view></view>
+			<view class="u-f-ajc" @tap="openTopicNav">更多<view class="icon iconfont icon-jinru"></view></view>
 		</view>
 		<view class="u-f-ac">
-			<block v-for="item in nav" :key="index">
+			<block v-for="(item,index) in nav" :key="index">
 				<view class="u-f-ajc">{{item.name}}</view>
 			</block>
 		</view>
@@ -16,6 +16,13 @@
 	export default {
 		props:{
 			nav:Array
+		},
+		methods:{
+			openTopicNav(){
+				uni.navigateTo({
+					url: '../../pages/topic-nav/topic-nav',
+				});
+			}
 		}
 	}
 </script>

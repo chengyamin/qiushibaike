@@ -34,6 +34,14 @@
 						<!-- 热门分类 -->
 						<topic-nav :nav="topic.nav"></topic-nav>
 						<!-- 最近更新 -->
+						<view class="topic-new">
+							<view>最近更新</view>
+								<block v-for="(item,index) in topic.list" :key="index">
+									<topic-list :item="item" :index="index"></topic-list>
+								</block>
+								
+							
+						</view>
 					</scroll-view>
 				</swiper-item>
 			</swiper>
@@ -47,13 +55,15 @@
 	import newsNavBar from '../../components/news/news-nav-bar.vue';
 	import loadMore from '../../components/common/load-more.vue';
 	import topicNav from '../../components/news/topic-nav.vue';
+	import topicList from '../../components/news/topic-list.vue';
 	
 	export default {
 		components:{
 			commonList,
 			newsNavBar,
 			loadMore,
-			topicNav
+			topicNav,
+			topicList
 		},
 		data() {
 			return {
@@ -151,6 +161,99 @@
 						{name:"情感"},
 						{name:"故事"},
 						{name:"喜爱"}
+					],
+					list:[
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						},
+						{
+							titlepic:"../../static/demo/topicpic/13.jpeg",
+							title:"话题名称",
+							desc:"话题描述",
+							totalnum:50,
+							todaynum:10
+						}
 					]
 				}
 			}
@@ -192,7 +295,7 @@
 							age:25,
 							isguanzhu:false,
 							title:"我是标题",
-							titlepic:"../../static/demo/datapic/13.jpg",
+							titlepic:"",
 							video:false,
 							share:false,
 							path:"深圳 龙岗",

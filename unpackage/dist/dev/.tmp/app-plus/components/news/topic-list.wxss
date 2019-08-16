@@ -1,0 +1,26 @@
+
+.topic-new.data-v-7d012f16{
+	padding:20rpx;
+}
+.topic-new>view.data-v-7d012f16:first-child{
+	padding-bottom:5rpx;
+	font-size: 32rpx;
+}
+.topic-list.data-v-7d012f16{
+	padding:20rpx 0;
+	border-bottom:1px solid #EEEEEE;
+}
+.topic-list image.data-v-7d012f16{
+	width:150rpx;
+	height:150rpx;
+	border-radius: 10rpx;
+	margin-right: 20rpx;
+}
+.topic-list>view>view.data-v-7d012f16{
+	color:#A4A4A4;
+}
+.topic-list>view>view.data-v-7d012f16:first-child{
+	color:#333333;
+	font-size: 32rpx;
+}
+
