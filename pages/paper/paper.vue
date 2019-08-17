@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		小纸条
 	</view>
 </template>
 
