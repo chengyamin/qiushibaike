@@ -1,4 +1,5 @@
 {
+  "enablePullDownRefresh": true,
   "navigationBarTitleText": "小纸条",
   "titleNView": {
     "buttons": [
@@ -20,5 +21,8 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "paper-list": "/components/paper/paper-list",
+    "load-more": "/components/common/load-more"
+  }
 }
