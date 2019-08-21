@@ -7,9 +7,8 @@
 			<view class="u-f-ac u-f-jsb">
 				<view class="u-f-ac">
 					{{item.username}}
-					<view class="tag-sex icon iconfont" :class="[item.sex==0?'icon-nan':'icon-nv']">
-						{{item.age}}
-					</view>
+					<!-- 年龄性别组件 -->
+					<tag-sex-age :sex="item.sex" :age="item.age"></tag-sex-age>
 				</view>
 				<view v-show="!isguanzhu" class="icon iconfont icon-zengjia" @tap="guanzhu">
 					关注
@@ -46,10 +45,12 @@
 </template>
 
 <script>
+	import tagSexAge from './tag-sex-age.vue';
 	export default {
 		props:{
 			item:Object,
-			index:Number
+			index:Number,
+			tagSexAge
 		},
 		data(){
 			return{
@@ -95,15 +96,7 @@
 		color:#999999;
 		font-size: 28upx;
 	}
-	.tag-sex{
-		background: #007AFF;
-		color:#FFFFFF;
-		font-size:20upx;
-		padding:0 10upx;
-		margin-left:10upx;
-		border-radius: 20upx;
-		line-height:28upx;
-	}
+	
 	.comoon-list-r>view:nth-child(1)>view:last-child{
 		background: #EEEEEE;
 		font-size: 26upx;

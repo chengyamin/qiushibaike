@@ -1,15 +1,8 @@
 <template>
 	<view class="body">
 		<!-- 操作菜单 -->
-		<view class="papar-left-popup-mask" v-show="show" @tap="hidepopup"></view>
-		<view class="papar-left-popup">
-			<view class="u-f-ac" hover-class="papar-left-popup-h">
-				<view class="icon iconfont icon-sousuo" @tap="addfriends"></view>加好友
-			</view>
-			<view class="u-f-ac" hover-class="papar-left-popup-h">
-				<view class="icon iconfont icon-qingchu" @tap="clear"></view>清除缓存
-			</view>
-		</view>
+		<papar-left-popup :show="show" @hide="hidepopup()" @addfriend="addfriend()" @clear="clear()"></papar-left-popup>
+		
 		<!-- 小纸条列表信息 -->
 		<block v-for="(item,index) in list" :key="index">
 			<paper-list :item="item" :index="index"></paper-list>
@@ -23,15 +16,17 @@
 <script>
 	import paperList from '../../components/paper/paper-list.vue';
 	import loadMore from '../../components/common/load-more.vue';
+	import paparLeftPopup from '../../components/paper/papar-left-popup.vue';
 	
 	export default {
 		components:{
 			paperList,
-			loadMore
+			loadMore,
+			paparLeftPopup
 		},
 		data() {
 			return {
-				show:true,
+				show:false,
 				loadtext:"上拉加载更多",
 				list:[
 					{
@@ -145,10 +140,12 @@
 		},
 		//监听导航按钮点击事件
 		onNavigationBarButtonTap(e) {
-			console.log(JSON.stringify(e));
+			// console.log(JSON.stringify(e));
 			switch (e.index){
 				case 0:
-					console.log("点击了左边按钮");
+					uni.navigateTo({
+						url: '../user-list/user-list',
+					});
 					this.hidepopup();
 					break;
 				case 1:
@@ -160,7 +157,7 @@
 			//操作菜单
 			addfriend(){
 				console.log("加糗友");
-				this.showpopup();
+				this.hidepopup();
 			},
 			clear(){
 				console.log("清除缓存");
@@ -253,33 +250,6 @@
 .body{
 	padding:0 20upx;
 }
-.papar-left-popup-mask{
-	position:fixed;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	z-index:1999;
-}
-.papar-left-popup{
-	position:fixed;
-	right:0;
-	top:10upx;
-	background:#FFFFFF;
-	z-index:2000;
-	width:55%;
-	box-shadow: 1upx 1upx 20upx 2upx #CCCCCC;
-}
-.papar-left-popup>view{
-	padding:20upx;
-	font-size:35upx;
-}
-.papar-left-popup>view>view{
-	margin-right:10upx;
-	font-weight: bold;
-}
-.papar-left-popup-h{
-	background: #EEEEEE;
-}
+
 
 </style>
