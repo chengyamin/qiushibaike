@@ -100,6 +100,7 @@
 				};
 				this.list.push(obj);
 				this.pageToBottom();
+				
 			}
 		}
 	}

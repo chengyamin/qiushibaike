@@ -1,0 +1,77 @@
+[33mcommit b9ef67f34b903360fd01421f21fdd5550b3bd38e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Thu Aug 22 18:45:59 2019 +0800
+
+    封装操作菜单 我的好友列表开发 tabBar组件再次优化 封装我的好友列表组件
+
+[33mcommit 4226981376d1bb9271ef111f9db4de0da9d38ae6[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Wed Aug 21 19:13:30 2019 +0800
+
+    封装操作菜单 我的好友列表开发 tabBar组件再次优化 封装我的好友列表组件
+
+[33mcommit 07fdb079c7282ee7617c67ae553008b492e17e9c[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Tue Aug 20 20:53:01 2019 +0800
+
+    小纸条页面开发 封装小纸条组件 上拉加载更多 下拉刷新 操作菜单开发
+
+[33mcommit 8a8ad0786788e6a0f92c9ae2a08566f7b9dd8b58[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Sat Aug 17 19:10:48 2019 +0800
+
+    封装话题介绍组件 公共列表组件使用 上拉加载 下拉刷新
+
+[33mcommit 22bdf05912f4d3f0d0cf81636cb29e9af7bc9375[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Fri Aug 16 20:27:17 2019 +0800
+
+    话题分类页开发 话题介绍组件开发 话题介绍组件封装
+
+[33mcommit 33fa3b7742981d3cd0925c09b928a8765a635895[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Thu Aug 15 19:01:49 2019 +0800
+
+    热门分类组件开发 封装remnant分类组件
+
+[33mcommit e38981c7068578cb146f680eb0a76609845e98b7[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Sat Aug 10 18:21:24 2019 +0800
+
+    公共列表样式封装
+
+[33mcommit 77b093d057bafec8f0a4344557139f9899aa5be2[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Fri Aug 9 18:21:38 2019 +0800
+
+    自定义动态列表导航
+
+[33mcommit b72cf43598dea3e3022c7009cb51c4e4fd57a790[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Wed Aug 7 18:34:54 2019 +0800
+
+    开发弹出提示框 保存草稿功能开发
+
+[33mcommit 9c193fd52d244047af95cf7eb6a5aad99c379b1a[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Tue Aug 6 18:46:30 2019 +0800
+
+    自定义导航栏开发 textarea组件使用及封装 上传多图功能及组件封装
+
+[33mcommit 21f1d800b648f897a433022eabdce7a56f8e4e0b[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Mon Aug 5 18:27:37 2019 +0800
+
+    封装无数据组件 开发搜索功能
+
+[33mcommit 4ba17bc002c54f4514d092b78a5f16e02208bf52[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Sat Aug 3 19:04:10 2019 +0800
+
+    图文视频列表样式 封装列表样式组件 滚动导航Tab 封装滚动导航tab组件 上拉加载更多及封装上拉加载更多
+
+[33mcommit 1ccb89473f5c6c3a25d4a377eb237eab69087146[m
+Author: chengyamin <chengyamimxiao@163.com>
+Date:   Fri Aug 2 20:39:43 2019 +0800
+
+    firstcommit
