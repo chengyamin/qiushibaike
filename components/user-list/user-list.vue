@@ -27,11 +27,11 @@
 			}
 		},
 		methods: {
-			opendetails(){
-				uni.navigateTo({
-					url: '../../pages/user-chat/user-chat',
-				});
-			}
+			// opendetails(){
+			// 	uni.navigateTo({
+			// 		url: '../../pages/user-chat/user-chat',
+			// 	});
+			// }
 		}
 	}
 </script>

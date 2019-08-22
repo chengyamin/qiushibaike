@@ -23,6 +23,7 @@
   },
   "usingComponents": {
     "paper-list": "/components/paper/paper-list",
-    "load-more": "/components/common/load-more"
+    "load-more": "/components/common/load-more",
+    "papar-left-popup": "/components/paper/papar-left-popup"
   }
 }

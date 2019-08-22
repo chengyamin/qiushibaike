@@ -1,0 +1,31 @@
+
+.papar-left-popup-mask.data-v-7279908e{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1999;
+}
+.papar-left-popup.data-v-7279908e{
+	position:fixed;
+	right:0;
+	top:10rpx;
+	background:#FFFFFF;
+	z-index:2000;
+	width:55%;
+	-webkit-box-shadow: 1rpx 1rpx 20rpx 2rpx #CCCCCC;
+	        box-shadow: 1rpx 1rpx 20rpx 2rpx #CCCCCC;
+}
+.papar-left-popup>view.data-v-7279908e{
+	padding:20rpx;
+	font-size:35rpx;
+}
+.papar-left-popup>view>view.data-v-7279908e{
+	margin-right:10rpx;
+	font-weight: bold;
+}
+.papar-left-popup-h.data-v-7279908e{
+	background: #EEEEEE;
+}
+

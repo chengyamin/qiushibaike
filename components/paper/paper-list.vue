@@ -1,5 +1,5 @@
 <template>
-	<view class="paper-list u-f-ac">
+	<view class="paper-list u-f-ac" @tap="opendetails">
 		<image :src="item.userpic" mode="widthFix" lazy-load></image>
 		<view>
 			<view class="u-f-ac u-f-jsb">{{item.username}}<view>{{item.time}}</view></view>
@@ -22,6 +22,13 @@
 		props:{
 			item:Object,
 			index:Number
+		},
+		methods:{
+			opendetails(){
+				uni.navigateTo({
+					url: '../../pages/user-chat/user-chat',
+				});
+			}
 		}
 	}
 </script>

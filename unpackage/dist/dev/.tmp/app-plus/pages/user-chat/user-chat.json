@@ -1,0 +1,22 @@
+{
+  "scrollIndicator": "none",
+  "bounce": "none",
+  "titleNView": {
+    "autoBackButton": false,
+    "titleText": "聊天页",
+    "buttons": [
+      {
+        "color": "#000000",
+        "colorPressed": "#BBBBBB",
+        "float": "right",
+        "fontSize": "20px",
+        "fontSrc": "/static/font/icon.ttf",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {
+    "user-chat-bottom": "/components/user-chat/user-chat-bottom",
+    "user-chat-list": "/components/user-chat/user-chat-list"
+  }
+}

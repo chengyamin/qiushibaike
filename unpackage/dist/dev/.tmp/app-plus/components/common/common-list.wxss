@@ -1,4 +1,19 @@
 
+.tag-sex.data-v-16624714{
+	background: #007AFF;
+	color:#FFFFFF;
+	font-size:20rpx;
+	padding:0 10rpx;
+	margin-left:10rpx;
+	border-radius: 20rpx;
+	line-height:28rpx;
+}
+.icon-nv.data-v-16624714{
+	background:#FF698D!important;
+}
+
+
+
 
 
 
@@ -99,15 +114,6 @@
 .comoon-list-r>view:nth-child(1)>view.data-v-1c4bd4ef:first-child{
 	color:#999999;
 	font-size: 28rpx;
-}
-.tag-sex.data-v-1c4bd4ef{
-	background: #007AFF;
-	color:#FFFFFF;
-	font-size:20rpx;
-	padding:0 10rpx;
-	margin-left:10rpx;
-	border-radius: 20rpx;
-	line-height:28rpx;
 }
 .comoon-list-r>view:nth-child(1)>view.data-v-1c4bd4ef:last-child{
 	background: #EEEEEE;

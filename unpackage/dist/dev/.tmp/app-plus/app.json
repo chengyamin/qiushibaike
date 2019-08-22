@@ -7,7 +7,10 @@
     "pages/search/search",
     "pages/add-input/add-input",
     "pages/topic-nav/topic-nav",
-    "pages/topic-detail/topic-detail"
+    "pages/topic-detail/topic-detail",
+    "pages/user-list/user-list",
+    "components/user-list/user-list",
+    "pages/user-chat/user-chat"
   ],
   "window": {
     "navigationBarTextStyle": "black",
