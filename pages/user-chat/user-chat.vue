@@ -48,8 +48,9 @@
 				} catch (e) {}
 			},
 			pageToBottom(){
+				//获取节点
 				let q=uni.createSelectorQuery();
-				q.select('scrollview').boundingClientRect();
+				q.select('#scrollview').boundingClientRect();//添加节点
 				q.selectAll('.user-chat-item').boundingClientRect();
 				q.exec((res)=>{
 					// console.log(JSON.stringify(res))

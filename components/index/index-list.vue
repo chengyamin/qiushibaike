@@ -8,8 +8,8 @@
 				<view class="icon iconfont icon-zengjia"></view>关注
 			</view>
 		</view>
-		<view class="index-list2">{{item.title}}</view>
-		<view class="index-list3 u-f-ajc">
+		<view class="index-list2" @tap="opendetail">{{item.title}}</view>
+		<view class="index-list3 u-f-ajc" @tap="opendetail">
 			<!-- 图片 -->
 			<image :src="item.titlepic" mode="widthFix" lazy-load></image>
 			<template v-if="item.type=='video'">
@@ -81,6 +81,12 @@
 					this.infonum.index=2;
 						break;
 				}
+			},
+			opendetail(){
+				// 进入详情页
+				uni.navigateTo({
+					url:"../../pages/detail/detail?detailData="+JSON.stringify(this.item),
+				})
 			}
 		}
 	}

@@ -32,8 +32,8 @@
 </template>
 
 <script>
-	import indexList from "../../components/index/index-list.vue"
-	import swiperTabHead from "../../components/index/swiper-tab-head.vue"
+	import indexList from "../../components/index/index-list.vue";
+	import swiperTabHead from "../../components/index/swiper-tab-head.vue";
 	import loadMore from '../../components/common/load-more.vue';
 	import noThing from '../../components/common/no-thing.vue';
 	export default {

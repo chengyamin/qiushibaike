@@ -88,6 +88,7 @@
         ,{
             "path" : "pages/search/search",
             "style" : {
+				"enablePullDownRefresh":true,
 				"app-plus":{
 					"scrollIndicator":"none",//隐藏滚动条
 					"bounce":"none",//关闭反弹效果
@@ -206,6 +207,23 @@
 								"fontSize":"20px",
 								"fontSrc":"/static/font/icon.ttf",
 								"text":"\ue628"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" : {
+				"navigationBarTitleText":"内容页",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"bounce":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu"
 							}
 						]
 					}
